@@ -1,0 +1,1227 @@
+{
+  "person": {
+    "name": "Hansol Cho",
+    "name_kr": "조한솔",
+    "email": "davidjo0326@gmail.com",
+    "phone": "+82-10-3092-5611",
+    "linkedin": "linkedin.com/in/hansol-cho",
+    "title": "AI Transformation Lead (Manager), AX Team at F&F Corporation",
+    "philosophy_major": true,
+    "summary": "B2B sales and AI transformation leader with 8+ years driving revenue growth across media, fashion, and technology verticals in the Korean market. Managed KRW 3-4B in annual deal flow with 85% client retention, led organization-wide AI adoption for 320 employees, and personally built production AI systems using Claude, MCP protocol, and knowledge graphs."
+  },
+  "companies": [
+    {
+      "id": "fnf-corporation",
+      "name": "F&F Corporation",
+      "name_kr": "에프앤에프",
+      "industry": "Fashion / Retail",
+      "description": "Global fashion group with brands including MLB, Discovery Expedition, Duvetica, and Sergio Tacchini"
+    },
+    {
+      "id": "cj-enm",
+      "name": "CJ ENM",
+      "name_kr": "CJ ENM",
+      "industry": "Entertainment / Media",
+      "description": "Korea's largest entertainment and media conglomerate (NASDAQ: CJENM)"
+    },
+    {
+      "id": "theplaycompany",
+      "name": "ThePlayCompany",
+      "name_kr": "더플레이컴퍼니",
+      "industry": "Startup",
+      "description": "Startup where Hansol delivered C-level Claude-centric AI integration training"
+    },
+    {
+      "id": "univ",
+      "name": "Univ",
+      "name_kr": "유니브",
+      "industry": "Startup",
+      "description": "Startup where Hansol delivered CEO-level 8-session Claude AI integration program"
+    },
+    {
+      "id": "kyung-hee-university",
+      "name": "Kyung Hee University",
+      "name_kr": "경희대학교",
+      "industry": "Education",
+      "description": "University in Seoul where Hansol earned a Bachelor of Arts in Philosophy"
+    }
+  ],
+  "positions": [
+    {
+      "id": "fnf-ai-transformation-lead",
+      "title": "AI Transformation Lead (Manager), AX Team",
+      "title_kr": "AX팀 AI 트랜스포메이션 리드 (매니저)",
+      "company_id": "fnf-corporation",
+      "start_date": "2023-07",
+      "end_date": "Present",
+      "is_current": true,
+      "key_responsibilities": [
+        "Scaled AI image generation from KRW 40M PoC to KRW 1B enterprise deployment",
+        "Lead 8-person cross-functional team delivering AI solutions across 5 global fashion brands",
+        "Designed and delivered company-wide AI adoption programs for 320 employees (200 Korea, 120 China)",
+        "Served as AI Committee Main PM, providing regular AI strategy briefings to CEO and CDO",
+        "Led AI transformation of China subsidiary (120 employees) with Alibaba Cloud-based infrastructure",
+        "Built and deployed 3 production MCP servers (50+ tools) powering daily enterprise operations",
+        "Implemented 12-criterion automated quality validation with 11 auto-fail gates for AI-generated content"
+      ]
+    },
+    {
+      "id": "cj-enm-bd-manager",
+      "title": "Business Development Manager, Digital Strategy",
+      "title_kr": "디지털 전략 사업개발 매니저",
+      "company_id": "cj-enm",
+      "start_date": "2021-01",
+      "end_date": "2023-07",
+      "is_current": false,
+      "key_responsibilities": [
+        "Managed KRW 3-4B annual portfolio of digital marketing consulting engagements with Samsung, Nexon, Kakao Webtoon, Tencent, TikTok",
+        "Achieved 85% client renewal rate through consultative data-driven approach",
+        "Generated KRW 2B in annual new business revenue by identifying digital transformation opportunities",
+        "Pioneered Korea's first generative AI content production pipeline in MCN industry (November 2022)",
+        "Established foundational partnership with TikTok (ByteDance) during Korea market entry"
+      ]
+    },
+    {
+      "id": "cj-enm-bd-associate",
+      "title": "Business Development Associate, Influencer Business",
+      "title_kr": "인플루언서 비즈니스 사업개발 어소시에이트",
+      "company_id": "cj-enm",
+      "start_date": "2018-01",
+      "end_date": "2021-01",
+      "is_current": false,
+      "key_responsibilities": [
+        "Recruited and grew 5+ YouTube partner channels to 1M+ subscribers each",
+        "Built global platform partnerships (TikTok, YouTube)",
+        "Managed IP licensing and digital advertising operations",
+        "Developed data-driven content consulting methodologies that became team standard"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "id": "fashion-image-tagging",
+      "title": "Fashion Image Tagging Automation System",
+      "title_kr": "패션 이미지 태깅 자동화 시스템",
+      "summary": "Claude-assisted automated tagging system for 150,000 fashion images — the catalyst for F&F's enterprise-wide AI transformation.",
+      "description": "Built a 2-stage pipeline using Claude as coding assistant and GPT-4o Vision API for image analysis, processing 150,000 fashion images in 5 days with 90% cost reduction and 90% accuracy. Designed 47 fashion taxonomy categories (120+ clothing types, 50+ colors, 41 materials) with synonym normalization. Evolved through 3 generations (V2→V3) with specialized versions for clothing, accessories, and general items. This system provided the quality training data foundation for the subsequent Varco Art project.",
+      "category": "claude_mastery",
+      "company_id": "fnf-corporation",
+      "start_date": "2023-12",
+      "end_date": "2024",
+      "scale_metrics": "150,000 images processed in 5 days, 47 taxonomy categories, 7 Python scripts, 3 generations",
+      "skills_used": [
+        "claude",
+        "python",
+        "gpt-4o",
+        "pandas",
+        "google-cloud-vision"
+      ],
+      "jd_requirements_demonstrated": [
+        {
+          "requirement_id": "ai-passion",
+          "strength": "★★★"
+        },
+        {
+          "requirement_id": "b2b-sales",
+          "strength": "★★★"
+        },
+        {
+          "requirement_id": "analytical-execution",
+          "strength": "★★★"
+        },
+        {
+          "requirement_id": "korean-market",
+          "strength": "★★★"
+        },
+        {
+          "requirement_id": "tech-sales",
+          "strength": "★★"
+        },
+        {
+          "requirement_id": "strategic-advisor",
+          "strength": "★★"
+        }
+      ]
+    },
+    {
+      "id": "ax-team-claude-code-skills",
+      "title": "AX Team Claude Code Skills Platform",
+      "title_kr": "AX팀 Claude Code Skills 플랫폼",
+      "summary": "Shared Claude Code custom skill ecosystem for the 8-person AX team with automated skill creation, deployment, and synchronization.",
+      "description": "Built a Claude Code custom skills ecosystem used by the entire 8-person AX team, with 9+ specialized skills covering image generation, Instagram analysis, K-pop SNS search, CEO reporting PPT, and LLM API documentation. Implemented automated skill-push/skill-sync via GitHub Actions so team members can update skills with a single Claude Code command. Operated as a private GitHub repository with Playwright MCP integration.",
+      "category": "claude_mastery",
+      "company_id": "fnf-corporation",
+      "start_date": "2025",
+      "end_date": "Present",
+      "scale_metrics": "9+ specialized skills, 8 team members, private GitHub repo with auto-sync",
+      "skills_used": [
+        "claude-code",
+        "github-actions",
+        "playwright-mcp",
+        "git"
+      ],
+      "jd_requirements_demonstrated": [
+        {
+          "requirement_id": "ai-passion",
+          "strength": "★★★"
+        },
+        {
+          "requirement_id": "tech-sales",
+          "strength": "★★★"
+        },
+        {
+          "requirement_id": "strategic-advisor",
+          "strength": "★★"
+        },
+        {
+          "requirement_id": "korean-market",
+          "strength": "★★"
+        }
+      ]
+    },
+    {
+      "id": "fnf-knowledge-graph-bi",
+      "title": "F&F Knowledge Graph — Enterprise BI MCP Server",
+      "title_kr": "F&F Knowledge Graph — 엔터프라이즈 BI MCP 서버",
+      "summary": "MCP server with 37 intent nodes and 29 API tools enabling Claude to analyze sales, SCM, and organizational data across 5 fashion brands.",
+      "description": "Architected a Knowledge Graph-based MCP server connecting Claude to 5 brands' (MLB, Discovery, MLB KIDS, Duvetica, Sergio Tacchini) sales, supply chain, and organizational data. Features 37 intent nodes, 29 API tools, and 9 skill-based intents supporting daily/weekly/monthly/seasonal time-series analysis. Deployed on corporate intranet as a production analytics system, reducing reporting bottlenecks by 50% and enabling natural-language BI queries across the organization.",
+      "category": "enterprise_ai",
+      "company_id": "fnf-corporation",
+      "start_date": "2025",
+      "end_date": "Present",
+      "scale_metrics": "37 intent nodes, 29 API tools, 5 brands, production intranet deployment",
+      "skills_used": [
+        "mcp-server",
+        "fastapi",
+        "neo4j",
+        "snowflake",
+        "claude-code",
+        "python"
+      ],
+      "jd_requirements_demonstrated": [
+        {
+          "requirement_id": "tech-sales",
+          "strength": "★★★"
+        },
+        {
+          "requirement_id": "strategic-advisor",
+          "strength": "★★★"
+        },
+        {
+          "requirement_id": "korean-market",
+          "strength": "★★★"
+        },
+        {
+          "requirement_id": "b2b-sales",
+          "strength": "★★"
+        },
+        {
+          "requirement_id": "ai-passion",
+          "strength": "★★"
+        },
+        {
+          "requirement_id": "analytical-execution",
+          "strength": "★★"
+        }
+      ]
+    },
+    {
+      "id": "autoskill",
+      "title": "Autoskill — Claude Autonomous Skill Generation Pipeline",
+      "title_kr": "Autoskill — Claude 자율 스킬 생성 파이프라인",
+      "summary": "End-to-end pipeline that automatically discovers tech trends, extracts content, and uses Claude Code headless mode to autonomously generate and deploy skills.",
+      "description": "Built a 2,549 LOC Python system combining open-source trend research (last30days skill for Reddit/X/YouTube/Web) with a custom bridge for scoring and deduplication, feeding into Claude Code headless mode for autonomous skill generation. Features a 5-stage pipeline (URL polling → content extraction → skill generation → task matching → diagram visualization), Notion 2-DB architecture, 3-tier content extraction fallback (Trafilatura → Jina Reader → FxTwitter), and Gemini-powered 4-panel comic visualization. Includes responsible AI safety mechanisms: Circuit Breaker (5 consecutive failures → 300s pause), Kill Switch, audit logging (JSONL), and max-turns limiting.",
+      "category": "claude_mastery",
+      "company_id": "fnf-corporation",
+      "start_date": "2025",
+      "end_date": "Present",
+      "scale_metrics": "2,549 LOC, 5-stage autonomous pipeline, 3-tier extraction fallback, safety circuit breaker",
+      "skills_used": [
+        "claude-code",
+        "python",
+        "notion-api",
+        "gemini",
+        "trafilatura",
+        "jina-reader"
+      ],
+      "jd_requirements_demonstrated": [
+        {
+          "requirement_id": "ai-passion",
+          "strength": "★★★"
+        },
+        {
+          "requirement_id": "tech-sales",
+          "strength": "★★★"
+        },
+        {
+          "requirement_id": "analytical-execution",
+          "strength": "★★★"
+        },
+        {
+          "requirement_id": "strategic-advisor",
+          "strength": "★★"
+        },
+        {
+          "requirement_id": "b2b-sales",
+          "strength": "★"
+        }
+      ]
+    },
+    {
+      "id": "fnf-studio",
+      "title": "FNF Studio — AI Fashion Image Generation MCP Server",
+      "title_kr": "FNF Studio — AI 패션 이미지 생성 MCP 서버",
+      "summary": "In-house MCP-based AI image generation platform replacing external vendor dependency, with 17 tools, 7,350 presets, and 12-criterion quality validation.",
+      "description": "After experiencing limitations of outsourced NC Soft Varco Art vendor (high per-image cost ¥2,500+, inability to encode brand DNA, slow iteration), redesigned the system from first principles. Built an in-house platform with 119 Python files, 17 MCP tools (brand cuts, virtual try-on, background replacement, AI influencer, selfie/UGC, gallery, CSV export), 7,350 preset combinations (75 poses × 98 scenes with compatibility matrix), and a 12-criterion MLBValidator with weighted scoring and 11 auto-fail gates. Achieved 68-80% cost reduction, 50% faster generation, 78% first-pass quality rate, enabling KRW 1B enterprise expansion.",
+      "category": "enterprise_ai",
+      "company_id": "fnf-corporation",
+      "start_date": "2024",
+      "end_date": "Present",
+      "scale_metrics": "119 Python files, 17 MCP tools, 7,350 preset combinations, 12-criterion validator, 11 auto-fail gates",
+      "skills_used": [
+        "mcp-server",
+        "fastmcp",
+        "sse",
+        "python",
+        "gemini",
+        "sqlite",
+        "claude-code"
+      ],
+      "jd_requirements_demonstrated": [
+        {
+          "requirement_id": "b2b-sales",
+          "strength": "★★★"
+        },
+        {
+          "requirement_id": "tech-sales",
+          "strength": "★★★"
+        },
+        {
+          "requirement_id": "strategic-advisor",
+          "strength": "★★★"
+        },
+        {
+          "requirement_id": "analytical-execution",
+          "strength": "★★★"
+        },
+        {
+          "requirement_id": "ai-passion",
+          "strength": "★★"
+        },
+        {
+          "requirement_id": "korean-market",
+          "strength": "★★"
+        }
+      ]
+    },
+    {
+      "id": "fnf-entertainment-dashboard",
+      "title": "FNF Entertainment Insights Dashboard + Grok VLM Knowledge Cutoff Solution",
+      "title_kr": "FNF Entertainment Insights Dashboard + Grok VLM 지식단절 극복",
+      "summary": "Real-time 4-platform trend analysis dashboard with a hybrid Grok-Gemini pipeline solving VLM knowledge cutoff for K-pop analysis.",
+      "description": "Built a full-stack dashboard (Next.js 15 + NestJS 11 monorepo) analyzing trends across Instagram, TikTok, YouTube, and X in real-time. Encountered Gemini Vision's knowledge cutoff problem (unable to identify post-Jan 2025 K-pop groups like CORTIS, Hearts2Hearts). Solved with a 2-stage hybrid pipeline: Grok real-time web search for context enrichment → injection into Gemini vision analysis. Implemented 3-tier enrichment strategy (Local KB $0 → File Cache $0 → Grok API ~$0.005) for cost optimization. A/B tested: virality scores went from 0/10 to 9/10 with Grok context injection at only ~$0.005 additional cost per query.",
+      "category": "enterprise_ai",
+      "company_id": "fnf-corporation",
+      "start_date": "2025",
+      "end_date": "Present",
+      "scale_metrics": "4 platforms, 5-category analysis framework, virality score 0→9 improvement, ~$0.055/query",
+      "skills_used": [
+        "nextjs",
+        "nestjs",
+        "typescript",
+        "python",
+        "grok-api",
+        "gemini",
+        "postgresql",
+        "playwright",
+        "apify"
+      ],
+      "jd_requirements_demonstrated": [
+        {
+          "requirement_id": "tech-sales",
+          "strength": "★★★"
+        },
+        {
+          "requirement_id": "analytical-execution",
+          "strength": "★★★"
+        },
+        {
+          "requirement_id": "korean-market",
+          "strength": "★★★"
+        },
+        {
+          "requirement_id": "b2b-sales",
+          "strength": "★★"
+        },
+        {
+          "requirement_id": "strategic-advisor",
+          "strength": "★★"
+        },
+        {
+          "requirement_id": "ai-passion",
+          "strength": "★★"
+        }
+      ]
+    },
+    {
+      "id": "fnco-influencer-seeding",
+      "title": "Influencer Seeding Content Management Platform (FnCo)",
+      "title_kr": "인플루언서 시딩 콘텐츠 관리 플랫폼 (FnCo)",
+      "summary": "End-to-end influencer marketing platform from crawling to AI planning to image generation to performance tracking across 3 regions.",
+      "description": "Built a comprehensive influencer marketing platform with React 18 frontend (40+ shadcn/ui components, MUI X Data Grid Premium), Express.js v5 backend, FastAPI AI microservices, and multi-platform crawlers (Instagram, TikTok, YouTube, X). Features 4-stage content lifecycle (Seeding → Preview → UGC → Performance), AI-powered marketing plan generation from PDF/PPT uploads via Gemini, 8-item AI video analysis with improvement suggestions, Azure AD SSO with 3-level RBAC, and support for 3 regions (Korea/China/Global).",
+      "category": "enterprise_ai",
+      "company_id": "fnf-corporation",
+      "start_date": "2024",
+      "end_date": "Present",
+      "scale_metrics": "3 regions, 4-stage lifecycle, 40+ UI components, Azure AD SSO, RBAC",
+      "skills_used": [
+        "react",
+        "express",
+        "fastapi",
+        "gemini",
+        "postgresql",
+        "azure-ad",
+        "aws-s3",
+        "playwright",
+        "python",
+        "typescript"
+      ],
+      "jd_requirements_demonstrated": [
+        {
+          "requirement_id": "b2b-sales",
+          "strength": "★★★"
+        },
+        {
+          "requirement_id": "strategic-advisor",
+          "strength": "★★★"
+        },
+        {
+          "requirement_id": "korean-market",
+          "strength": "★★★"
+        },
+        {
+          "requirement_id": "tech-sales",
+          "strength": "★★"
+        },
+        {
+          "requirement_id": "analytical-execution",
+          "strength": "★★"
+        },
+        {
+          "requirement_id": "ai-passion",
+          "strength": "★"
+        }
+      ]
+    },
+    {
+      "id": "content-factory",
+      "title": "Content Factory — Beauty Content Knowledge Graph + Graph RAG",
+      "title_kr": "Content Factory — 뷰티 콘텐츠 Knowledge Graph + Graph RAG",
+      "summary": "5-generation knowledge graph system transforming 194 beauty video engagement datasets into structured knowledge with 4-tool agentic RAG for automated content planning.",
+      "description": "Built a knowledge graph system evolving through 5 generations (NetworkX prototype → Neo4j production) that transforms 194 beauty video engagement datasets into structured knowledge with VLM multimodal analysis. Features 4-tool agentic RAG with LLM Intent Router (analyze_performance, recommend_recipe, diagnose_hook, generate_draft_plan), HybridRetriever combining vector and full-text search, 12-type Hook classification system, and scene-level multimodal analysis. Demonstrates the thesis that proprietary data structured for LLM reasoning becomes a startup's competitive moat.",
+      "category": "enterprise_ai",
+      "company_id": "fnf-corporation",
+      "start_date": "2024",
+      "end_date": "Present",
+      "scale_metrics": "194 videos, 5 generations, 4-tool RAG, 12 hook types, Neo4j production",
+      "skills_used": [
+        "neo4j",
+        "graph-rag",
+        "gemini",
+        "python",
+        "networkx",
+        "playwright",
+        "n8n",
+        "google-cloud-vision"
+      ],
+      "jd_requirements_demonstrated": [
+        {
+          "requirement_id": "tech-sales",
+          "strength": "★★★"
+        },
+        {
+          "requirement_id": "strategic-advisor",
+          "strength": "★★★"
+        },
+        {
+          "requirement_id": "ai-passion",
+          "strength": "★★★"
+        },
+        {
+          "requirement_id": "analytical-execution",
+          "strength": "★★★"
+        },
+        {
+          "requirement_id": "korean-market",
+          "strength": "★★★"
+        },
+        {
+          "requirement_id": "b2b-sales",
+          "strength": "★★"
+        }
+      ]
+    },
+    {
+      "id": "ai-education-ai-committee",
+      "title": "Enterprise AI Education & AI Committee Operations",
+      "title_kr": "전사 AI 교육 & AI Committee 운영",
+      "summary": "Led AI adoption transformation for 320 employees across Korea (200) and China (120) with 4.8/5.0 satisfaction, plus AI Committee PM with regular CEO/CDO briefings.",
+      "description": "Designed and executed company-wide AI adoption programs including: AI Committee Main PM with regular technology briefings to CEO (Chairman) and CDO (Managing Director); domestic AI education for 200+ employees with role-specific curricula for designers, content creators, marketers, and e-biz teams; China subsidiary AI transformation for 120 employees achieving 4.8/5.0 satisfaction with cross-border AI workflow standardization; and AI Challengers program for talent selection resulting in promotions. Presented the company-wide Marketing AX Roadmap at the 2026 corporate kickoff.",
+      "category": "enterprise_ai",
+      "company_id": "fnf-corporation",
+      "start_date": "2023-07",
+      "end_date": "Present",
+      "scale_metrics": "320 employees (200 Korea + 120 China), 4.8/5.0 satisfaction, CEO/CDO regular briefings",
+      "skills_used": [
+        "claude",
+        "gemini",
+        "gpt-4o",
+        "curriculum-design",
+        "stakeholder-management"
+      ],
+      "jd_requirements_demonstrated": [
+        {
+          "requirement_id": "strategic-advisor",
+          "strength": "★★★"
+        },
+        {
+          "requirement_id": "b2b-sales",
+          "strength": "★★★"
+        },
+        {
+          "requirement_id": "ai-passion",
+          "strength": "★★★"
+        },
+        {
+          "requirement_id": "korean-market",
+          "strength": "★★★"
+        },
+        {
+          "requirement_id": "tech-sales",
+          "strength": "★★"
+        },
+        {
+          "requirement_id": "analytical-execution",
+          "strength": "★★"
+        }
+      ]
+    },
+    {
+      "id": "context-architect-training",
+      "title": "Context Architect Training — Strategic AI Enablement for Startup Executives",
+      "title_kr": "Context Architect Training — 스타트업 경영진 AI 내재화 교육",
+      "summary": "Claude-centric AI integration curriculum for startup C-level executives, achieving 90%+ assignment completion and driving adoption buying signals.",
+      "description": "Designed and delivered Claude-centric AI integration curriculum for startup C-level executives: a 5-session program for 16 leaders (CEO, department heads) at ThePlayCompany and a CEO-level 8-session program at Univ. Achieved 90%+ assignment completion from executives whose time is most valuable. Post-training, participants shifted from tool-usage questions to technical integration inquiries (MCP connections, LLM pipelines), demonstrating that education drives adoption — a clear buying signal validating the AE approach.",
+      "category": "ecosystem",
+      "company_id": null,
+      "start_date": "2025",
+      "end_date": "Present",
+      "scale_metrics": "16 leaders at ThePlayCompany, 8-session CEO program at Univ, 90%+ completion rate",
+      "skills_used": [
+        "claude",
+        "mcp-server",
+        "curriculum-design",
+        "stakeholder-management"
+      ],
+      "jd_requirements_demonstrated": [
+        {
+          "requirement_id": "strategic-advisor",
+          "strength": "★★★"
+        },
+        {
+          "requirement_id": "b2b-sales",
+          "strength": "★★★"
+        },
+        {
+          "requirement_id": "ai-passion",
+          "strength": "★★★"
+        },
+        {
+          "requirement_id": "tech-sales",
+          "strength": "★★"
+        },
+        {
+          "requirement_id": "korean-market",
+          "strength": "★★"
+        },
+        {
+          "requirement_id": "analytical-execution",
+          "strength": "★★"
+        }
+      ]
+    },
+    {
+      "id": "ai-news-reporter",
+      "title": "AI News Reporter Agent",
+      "title_kr": "AI News Reporter Agent",
+      "summary": "Automated news agent tracking 6 global/Korean AI sources including Anthropic Blog, with LLM pricing comparison calculator.",
+      "description": "Built a 3-layer architecture (Crawler → Analyzer → Reporter) agent that automatically tracks 6 AI news sources (TechCrunch AI, Anthropic Blog, OpenAI Blog, AI Times, ZDNet Korea, generic) using Playwright headless browser. Features 3 operational modes: news analysis, API documentation analysis, and pricing comparison calculator. Syncs to Notion DB for automated weekly report generation. Anthropic Blog is configured as the #1 priority crawling source.",
+      "category": "ecosystem",
+      "company_id": null,
+      "start_date": "2025",
+      "end_date": "Present",
+      "scale_metrics": "6 sources, 3 modes, Notion DB auto-sync, Anthropic Blog as #1 source",
+      "skills_used": [
+        "python",
+        "gemini",
+        "playwright",
+        "notion-api"
+      ],
+      "jd_requirements_demonstrated": [
+        {
+          "requirement_id": "ai-passion",
+          "strength": "★★★"
+        },
+        {
+          "requirement_id": "analytical-execution",
+          "strength": "★★★"
+        },
+        {
+          "requirement_id": "strategic-advisor",
+          "strength": "★★"
+        },
+        {
+          "requirement_id": "korean-market",
+          "strength": "★★"
+        },
+        {
+          "requirement_id": "b2b-sales",
+          "strength": "★"
+        },
+        {
+          "requirement_id": "tech-sales",
+          "strength": "★"
+        }
+      ]
+    },
+    {
+      "id": "linn-custom-nodes",
+      "title": "Linn Custom Nodes — AI Fashion Photography Automation (ComfyUI)",
+      "title_kr": "Linn Custom Nodes — AI 패션 촬영 자동화 (ComfyUI)",
+      "summary": "28,820-line Python codebase with 104+ custom ComfyUI nodes for AI video/image generation pipeline including Photography DNA systems.",
+      "description": "Developed a comprehensive AI video/image generation pipeline with 28,820 lines of Python across 53 modules and 104+ custom ComfyUI nodes. Features 3 Photography DNA systems (Studio/Outdoor/Snapshot with detailed camera, lens, lighting, and mood prompt engineering), full video analysis pipeline (load → AI analysis via Gemini → JSON shot plan → frame extraction → image generation → video synthesis), batch CAD-to-photorealistic conversion, face swap, background compositing (3 versions), pose/texture/color transformations, and session-based + file-based persistent memory for cost optimization.",
+      "category": "ecosystem",
+      "company_id": "fnf-corporation",
+      "start_date": "2024",
+      "end_date": "Present",
+      "scale_metrics": "28,820 LOC, 53 modules, 104+ custom nodes, 3 Photography DNA systems",
+      "skills_used": [
+        "python",
+        "comfyui",
+        "gemini",
+        "kling-ai",
+        "elevenlabs",
+        "opencv",
+        "numpy",
+        "pillow"
+      ],
+      "jd_requirements_demonstrated": [
+        {
+          "requirement_id": "tech-sales",
+          "strength": "★★★"
+        },
+        {
+          "requirement_id": "ai-passion",
+          "strength": "★★"
+        },
+        {
+          "requirement_id": "analytical-execution",
+          "strength": "★★"
+        },
+        {
+          "requirement_id": "korean-market",
+          "strength": "★★"
+        },
+        {
+          "requirement_id": "b2b-sales",
+          "strength": "★"
+        },
+        {
+          "requirement_id": "strategic-advisor",
+          "strength": "★"
+        }
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "id": "claude",
+      "name": "Claude (Code, MCP, API)",
+      "category": "AI/LLM"
+    },
+    {
+      "id": "claude-code",
+      "name": "Claude Code (Headless, Skills)",
+      "category": "AI/LLM"
+    },
+    {
+      "id": "gemini",
+      "name": "Google Gemini (Flash/Pro)",
+      "category": "AI/LLM"
+    },
+    {
+      "id": "gpt-4o",
+      "name": "GPT-4o (Vision)",
+      "category": "AI/LLM"
+    },
+    {
+      "id": "grok-api",
+      "name": "Grok (xAI)",
+      "category": "AI/LLM"
+    },
+    {
+      "id": "mcp-server",
+      "name": "MCP Servers (FastMCP, SSE)",
+      "category": "Production"
+    },
+    {
+      "id": "neo4j",
+      "name": "Neo4j (Knowledge Graph, Graph RAG)",
+      "category": "Production"
+    },
+    {
+      "id": "fastapi",
+      "name": "FastAPI",
+      "category": "Production"
+    },
+    {
+      "id": "graph-rag",
+      "name": "Graph RAG (HybridRetriever)",
+      "category": "Production"
+    },
+    {
+      "id": "n8n",
+      "name": "n8n Workflow Automation",
+      "category": "Production"
+    },
+    {
+      "id": "python",
+      "name": "Python",
+      "category": "Development"
+    },
+    {
+      "id": "nextjs",
+      "name": "Next.js",
+      "category": "Development"
+    },
+    {
+      "id": "react",
+      "name": "React",
+      "category": "Development"
+    },
+    {
+      "id": "nestjs",
+      "name": "NestJS",
+      "category": "Development"
+    },
+    {
+      "id": "express",
+      "name": "Express.js",
+      "category": "Development"
+    },
+    {
+      "id": "typescript",
+      "name": "TypeScript",
+      "category": "Development"
+    },
+    {
+      "id": "comfyui",
+      "name": "ComfyUI",
+      "category": "Development"
+    },
+    {
+      "id": "google-cloud-platform",
+      "name": "Google Cloud Platform",
+      "category": "Cloud"
+    },
+    {
+      "id": "alibaba-cloud",
+      "name": "Alibaba Cloud",
+      "category": "Cloud"
+    },
+    {
+      "id": "aws-s3",
+      "name": "AWS (S3)",
+      "category": "Cloud"
+    },
+    {
+      "id": "azure-ad",
+      "name": "Azure AD (SSO/MSAL)",
+      "category": "Cloud"
+    },
+    {
+      "id": "postgresql",
+      "name": "PostgreSQL",
+      "category": "Data"
+    },
+    {
+      "id": "bigquery",
+      "name": "BigQuery",
+      "category": "Data"
+    },
+    {
+      "id": "snowflake",
+      "name": "Snowflake",
+      "category": "Data"
+    },
+    {
+      "id": "pandas",
+      "name": "Pandas",
+      "category": "Data"
+    },
+    {
+      "id": "sqlite",
+      "name": "SQLite",
+      "category": "Data"
+    },
+    {
+      "id": "korean",
+      "name": "Korean (Native)",
+      "category": "Language"
+    },
+    {
+      "id": "english",
+      "name": "English (Professional)",
+      "category": "Language"
+    },
+    {
+      "id": "chinese",
+      "name": "Chinese (Business Basic)",
+      "category": "Language"
+    },
+    {
+      "id": "github-actions",
+      "name": "GitHub Actions",
+      "category": "Production"
+    },
+    {
+      "id": "playwright",
+      "name": "Playwright",
+      "category": "Development"
+    },
+    {
+      "id": "playwright-mcp",
+      "name": "Playwright MCP",
+      "category": "Production"
+    },
+    {
+      "id": "git",
+      "name": "Git",
+      "category": "Development"
+    },
+    {
+      "id": "notion-api",
+      "name": "Notion API",
+      "category": "Development"
+    },
+    {
+      "id": "trafilatura",
+      "name": "Trafilatura",
+      "category": "Development"
+    },
+    {
+      "id": "jina-reader",
+      "name": "Jina Reader API",
+      "category": "Development"
+    },
+    {
+      "id": "google-cloud-vision",
+      "name": "Google Cloud Vision API",
+      "category": "AI/LLM"
+    },
+    {
+      "id": "kling-ai",
+      "name": "Kling AI (Video Generation)",
+      "category": "AI/LLM"
+    },
+    {
+      "id": "elevenlabs",
+      "name": "ElevenLabs (TTS)",
+      "category": "AI/LLM"
+    },
+    {
+      "id": "opencv",
+      "name": "OpenCV",
+      "category": "Development"
+    },
+    {
+      "id": "numpy",
+      "name": "NumPy",
+      "category": "Development"
+    },
+    {
+      "id": "pillow",
+      "name": "Pillow",
+      "category": "Development"
+    },
+    {
+      "id": "networkx",
+      "name": "NetworkX",
+      "category": "Development"
+    },
+    {
+      "id": "apify",
+      "name": "Apify",
+      "category": "Development"
+    },
+    {
+      "id": "curriculum-design",
+      "name": "Curriculum Design & AI Training",
+      "category": "Production"
+    },
+    {
+      "id": "stakeholder-management",
+      "name": "Stakeholder Management (C-Level)",
+      "category": "Production"
+    },
+    {
+      "id": "fastmcp",
+      "name": "FastMCP",
+      "category": "Production"
+    },
+    {
+      "id": "sse",
+      "name": "SSE (Server-Sent Events)",
+      "category": "Production"
+    }
+  ],
+  "achievements": [
+    {
+      "id": "poc-to-enterprise-expansion",
+      "text": "Scaled AI image generation initiative from KRW 40M (~USD 31K) PoC to KRW 1B (~USD 770K) enterprise deployment",
+      "metric_value": 1000000000,
+      "metric_unit": "KRW",
+      "context": "F&F AI image generation platform expansion",
+      "project_id": "fnf-studio",
+      "position_id": "fnf-ai-transformation-lead"
+    },
+    {
+      "id": "per-image-cost-reduction",
+      "text": "Reduced per-image costs by 68-80% compared to external vendor (Varco Art)",
+      "metric_value": 80,
+      "metric_unit": "%",
+      "context": "FNF Studio vs NC Soft Varco Art external vendor",
+      "project_id": "fnf-studio",
+      "position_id": "fnf-ai-transformation-lead"
+    },
+    {
+      "id": "generation-speed-improvement",
+      "text": "Achieved 50% faster image generation speed compared to external vendor",
+      "metric_value": 50,
+      "metric_unit": "%",
+      "context": "FNF Studio generation time 10-15s vs Varco Art 20-30s",
+      "project_id": "fnf-studio",
+      "position_id": "fnf-ai-transformation-lead"
+    },
+    {
+      "id": "first-pass-quality-rate",
+      "text": "Achieved 78% first-pass quality rate (S/A grade) with automated validation",
+      "metric_value": 78,
+      "metric_unit": "%",
+      "context": "FNF Studio 12-criterion MLBValidator automated quality gate",
+      "project_id": "fnf-studio",
+      "position_id": "fnf-ai-transformation-lead"
+    },
+    {
+      "id": "prompt-engineering-reduction",
+      "text": "Reduced prompt engineering effort by 80% through preset reuse system",
+      "metric_value": 80,
+      "metric_unit": "%",
+      "context": "7,350 preset combinations replacing manual prompt writing",
+      "project_id": "fnf-studio",
+      "position_id": "fnf-ai-transformation-lead"
+    },
+    {
+      "id": "cross-functional-team-lead",
+      "text": "Led 8-person cross-functional team delivering AI solutions across 5 global fashion brands",
+      "metric_value": 8,
+      "metric_unit": "people",
+      "context": "AX Team at F&F Corporation",
+      "project_id": null,
+      "position_id": "fnf-ai-transformation-lead"
+    },
+    {
+      "id": "ai-adoption-320-employees",
+      "text": "Designed and delivered company-wide AI adoption programs for 320 employees (200 Korea, 120 China)",
+      "metric_value": 320,
+      "metric_unit": "people",
+      "context": "F&F enterprise-wide AI adoption",
+      "project_id": "ai-education-ai-committee",
+      "position_id": "fnf-ai-transformation-lead"
+    },
+    {
+      "id": "ai-training-satisfaction",
+      "text": "Achieved 4.8/5.0 satisfaction rating for AI training programs",
+      "metric_value": 4.8,
+      "metric_unit": "rating out of 5.0",
+      "context": "China subsidiary AI education program",
+      "project_id": "ai-education-ai-committee",
+      "position_id": "fnf-ai-transformation-lead"
+    },
+    {
+      "id": "mcp-servers-deployed",
+      "text": "Built and deployed 3 production MCP servers with 50+ tools powering daily enterprise operations",
+      "metric_value": 50,
+      "metric_unit": "tools",
+      "context": "AI image generation, knowledge graph BI, and content planning MCP servers",
+      "project_id": null,
+      "position_id": "fnf-ai-transformation-lead"
+    },
+    {
+      "id": "quality-validation-criteria",
+      "text": "Implemented 12-criterion automated quality validation with 11 auto-fail gates",
+      "metric_value": 12,
+      "metric_unit": "criteria",
+      "context": "Brand safety, anatomical accuracy, and commercial viability validation",
+      "project_id": "fnf-studio",
+      "position_id": "fnf-ai-transformation-lead"
+    },
+    {
+      "id": "annual-deal-flow",
+      "text": "Managed KRW 3-4B (~USD 2.3-3M) annual portfolio of digital marketing consulting engagements",
+      "metric_value": 4000000000,
+      "metric_unit": "KRW",
+      "context": "CJ ENM digital marketing consulting portfolio",
+      "project_id": null,
+      "position_id": "cj-enm-bd-manager"
+    },
+    {
+      "id": "client-renewal-rate",
+      "text": "Achieved 85% client renewal rate through consultative data-driven approach",
+      "metric_value": 85,
+      "metric_unit": "%",
+      "context": "CJ ENM client portfolio including Samsung, Nexon, Kakao Webtoon, Tencent, TikTok",
+      "project_id": null,
+      "position_id": "cj-enm-bd-manager"
+    },
+    {
+      "id": "new-business-revenue",
+      "text": "Generated KRW 2B (~USD 1.5M) in annual new business revenue",
+      "metric_value": 2000000000,
+      "metric_unit": "KRW",
+      "context": "New digital transformation opportunities across enterprise and startup clients",
+      "project_id": null,
+      "position_id": "cj-enm-bd-manager"
+    },
+    {
+      "id": "production-cost-reduction-mcn",
+      "text": "Pioneered Korea's first generative AI content production pipeline in MCN industry, reducing production costs by 65%",
+      "metric_value": 65,
+      "metric_unit": "%",
+      "context": "CJ ENM MCN industry, November 2022",
+      "project_id": null,
+      "position_id": "cj-enm-bd-manager"
+    },
+    {
+      "id": "youtube-channels-1m",
+      "text": "Recruited and grew 5+ YouTube partner channels to 1M+ subscribers each",
+      "metric_value": 5,
+      "metric_unit": "channels",
+      "context": "CJ ENM influencer business YouTube growth",
+      "project_id": null,
+      "position_id": "cj-enm-bd-associate"
+    },
+    {
+      "id": "image-tagging-150k",
+      "text": "Processed 150,000 fashion images in 5 days with 90% cost reduction and 90% accuracy",
+      "metric_value": 150000,
+      "metric_unit": "images",
+      "context": "Fashion image tagging automation using Claude + GPT-4o",
+      "project_id": "fashion-image-tagging",
+      "position_id": "fnf-ai-transformation-lead"
+    },
+    {
+      "id": "image-tagging-cost-reduction",
+      "text": "Achieved 90% cost reduction vs outsourcing for image tagging automation",
+      "metric_value": 90,
+      "metric_unit": "%",
+      "context": "15万 images tagged in 5 days by non-developer using Claude",
+      "project_id": "fashion-image-tagging",
+      "position_id": "fnf-ai-transformation-lead"
+    },
+    {
+      "id": "image-tagging-accuracy",
+      "text": "Achieved 90% accuracy on automated fashion image tagging",
+      "metric_value": 90,
+      "metric_unit": "%",
+      "context": "2-stage pipeline with GPT-4o generation + taxonomy dictionary validation",
+      "project_id": "fashion-image-tagging",
+      "position_id": "fnf-ai-transformation-lead"
+    },
+    {
+      "id": "reporting-bottleneck-reduction",
+      "text": "Reduced reporting bottlenecks by 50% with Knowledge Graph BI system",
+      "metric_value": 50,
+      "metric_unit": "%",
+      "context": "Enterprise Knowledge Graph BI deployed on corporate intranet",
+      "project_id": "fnf-knowledge-graph-bi",
+      "position_id": "fnf-ai-transformation-lead"
+    },
+    {
+      "id": "context-architect-completion",
+      "text": "Achieved 90%+ assignment completion rate from startup C-level executives",
+      "metric_value": 90,
+      "metric_unit": "%",
+      "context": "Context Architect Training for ThePlayCompany (16 leaders) and Univ (CEO-level)",
+      "project_id": "context-architect-training",
+      "position_id": null
+    },
+    {
+      "id": "virality-score-improvement",
+      "text": "Improved K-pop content virality analysis scores from 0/10 to 9/10 with Grok context injection",
+      "metric_value": 9,
+      "metric_unit": "score out of 10",
+      "context": "VLM knowledge cutoff solved via Grok hybrid pipeline, ~$0.005 additional cost",
+      "project_id": "fnf-entertainment-dashboard",
+      "position_id": "fnf-ai-transformation-lead"
+    },
+    {
+      "id": "linn-nodes-codebase",
+      "text": "Built 28,820 lines of Python code with 104+ custom ComfyUI nodes",
+      "metric_value": 28820,
+      "metric_unit": "LOC",
+      "context": "AI fashion photography automation pipeline",
+      "project_id": "linn-custom-nodes",
+      "position_id": "fnf-ai-transformation-lead"
+    },
+    {
+      "id": "total-python-codebase",
+      "text": "31,369+ lines of Python code across all production projects",
+      "metric_value": 31369,
+      "metric_unit": "LOC",
+      "context": "Total Python codebase demonstrating technical depth as non-developer",
+      "project_id": null,
+      "position_id": "fnf-ai-transformation-lead"
+    },
+    {
+      "id": "preset-combinations",
+      "text": "Created 7,350 preset combinations (75 poses × 98 scenes) with compatibility matrix",
+      "metric_value": 7350,
+      "metric_unit": "presets",
+      "context": "FNF Studio brand-specific image generation presets",
+      "project_id": "fnf-studio",
+      "position_id": "fnf-ai-transformation-lead"
+    },
+    {
+      "id": "autoskill-codebase",
+      "text": "Built 2,549 LOC autonomous skill generation pipeline",
+      "metric_value": 2549,
+      "metric_unit": "LOC",
+      "context": "Autoskill trend-to-skill automation with Claude Code headless mode",
+      "project_id": "autoskill",
+      "position_id": "fnf-ai-transformation-lead"
+    },
+    {
+      "id": "content-factory-videos",
+      "text": "Analyzed 194 beauty video engagement datasets with 5-generation knowledge graph evolution",
+      "metric_value": 194,
+      "metric_unit": "videos",
+      "context": "Content Factory KG + Graph RAG system",
+      "project_id": "content-factory",
+      "position_id": "fnf-ai-transformation-lead"
+    },
+    {
+      "id": "taxonomy-categories",
+      "text": "Designed 47 fashion taxonomy categories with 120+ clothing types, 50+ colors, 41 materials, 27 patterns",
+      "metric_value": 47,
+      "metric_unit": "categories",
+      "context": "Fashion image tagging taxonomy system",
+      "project_id": "fashion-image-tagging",
+      "position_id": "fnf-ai-transformation-lead"
+    },
+    {
+      "id": "kg-intent-nodes",
+      "text": "Architected 37 intent nodes and 29 API tools for enterprise BI MCP server",
+      "metric_value": 37,
+      "metric_unit": "intent nodes",
+      "context": "F&F Knowledge Graph serving 5 brand analytics",
+      "project_id": "fnf-knowledge-graph-bi",
+      "position_id": "fnf-ai-transformation-lead"
+    },
+    {
+      "id": "promotion-for-ai-transformation",
+      "text": "Recognized with promotion for transforming organization into AI-native workforce",
+      "metric_value": null,
+      "metric_unit": null,
+      "context": "Promoted in 2025 at F&F Corporation",
+      "project_id": "ai-education-ai-committee",
+      "position_id": "fnf-ai-transformation-lead"
+    }
+  ],
+  "jd_requirements": [
+    {
+      "id": "b2b-sales",
+      "name": "B2B Startup Sales",
+      "name_kr": "B2B 스타트업 세일즈",
+      "description": "3+ years of experience prospecting and closing startup leads, driving adoption of emerging technologies with a consultative, solutions-oriented sales approach"
+    },
+    {
+      "id": "tech-sales",
+      "name": "Technical Stakeholder Sales",
+      "name_kr": "기술 이해관계자 세일즈",
+      "description": "Selling to technical stakeholders, securing strategic deals by understanding multifaceted technical requirements and crafting tailored solutions within complex sales cycles"
+    },
+    {
+      "id": "strategic-advisor",
+      "name": "Strategic Business Advisor",
+      "name_kr": "전략적 비즈니스 어드바이저",
+      "description": "Deeply understanding the needs of startup founders and creating innovative solutions that align with their vision and help them succeed"
+    },
+    {
+      "id": "ai-passion",
+      "name": "AI Passion & Safety",
+      "name_kr": "AI 열정 및 안전한 AI",
+      "description": "Passion for emerging technologies like AI, with interest in ensuring they are developed safely and responsibly. Experience with advanced AI systems and frontier AI safety"
+    },
+    {
+      "id": "analytical-execution",
+      "name": "Analytical + Creative Execution",
+      "name_kr": "분석적 + 창의적 실행",
+      "description": "Strategic, analytical approach to assessing markets combined with creative, tactical execution to capture opportunities. Analytical understanding of customer needs with creative follow-up"
+    },
+    {
+      "id": "korean-market",
+      "name": "Korean Market Expansion",
+      "name_kr": "한국 시장 확장",
+      "description": "Win new business and drive revenue for Anthropic in Korea. Spearhead market expansion by pinpointing new customer segments and use cases in the Korean market"
+    }
+  ],
+  "project_evolution": [
+    {
+      "from": "fashion-image-tagging",
+      "to": "fnf-studio",
+      "evolution_type": "training_data_foundation",
+      "description": "Image tagging taxonomy and VLM processing became training data foundation for AI image generation studio"
+    },
+    {
+      "from": "fashion-image-tagging",
+      "to": "content-factory",
+      "evolution_type": "vlm_technique_transfer",
+      "description": "VLM multimodal image analysis from fashion tagging applied to beauty content analysis and Knowledge Graph"
+    },
+    {
+      "from": "content-factory",
+      "to": "fnf-knowledge-graph-bi",
+      "evolution_type": "architecture_reuse",
+      "description": "Graph RAG + Neo4j pattern from beauty content scaled to enterprise-wide BI MCP server"
+    },
+    {
+      "from": "fnf-studio",
+      "to": "linn-custom-nodes",
+      "evolution_type": "pipeline_evolution",
+      "description": "MCP-based image generation extended to ComfyUI custom node pipeline with Photography DNA"
+    },
+    {
+      "from": "ai-education-ai-committee",
+      "to": "context-architect-training",
+      "evolution_type": "capability_expansion",
+      "description": "Internal AI education (320 employees) expanded to external startup C-level executive training"
+    },
+    {
+      "from": "ax-team-claude-code-skills",
+      "to": "autoskill",
+      "evolution_type": "automation_evolution",
+      "description": "Manual skill curation evolved into autonomous 5-stage skill generation pipeline via Claude Code headless"
+    }
+  ]
+}

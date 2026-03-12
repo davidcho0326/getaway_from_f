@@ -1,0 +1,15 @@
+# Environment
+.env
+__pycache__/
+*.pyc
+
+# Data
+career_kg/data/
+*.db
+
+# Generated (regenerable)
+career_kg/portfolio_pages.json
+
+# OS
+.DS_Store
+Daviddd-main/

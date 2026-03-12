@@ -1,0 +1,14 @@
+# Environment
+.env
+__pycache__/
+*.pyc
+
+# Data
+data/
+*.db
+
+# Upload script output (regenerable)
+portfolio_pages.json
+
+# OS
+.DS_Store
