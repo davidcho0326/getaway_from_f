@@ -49,9 +49,9 @@ def init_logger():
 
 
 @st.cache_resource
-def init_portfolio_mapper():
-    """Initialize PortfolioMapper once (cached across reruns)."""
-    return PortfolioMapper()
+def init_portfolio_mapper(_orch):
+    """Initialize PortfolioMapper with graph_rag dependency (cached across reruns)."""
+    return PortfolioMapper(graph_rag=_orch.graph)
 
 
 def render_sidebar():
@@ -193,7 +193,7 @@ def process_and_display(query: str, orch):
 
         render_visualization(result["tool"], result["graph_data"], result["params"])
 
-        mapper = init_portfolio_mapper()
+        mapper = init_portfolio_mapper(orch)
         portfolio_images = mapper.get_images(result["tool"], result["graph_data"], result["params"])
         render_portfolio_images(portfolio_images)
 

@@ -319,6 +319,54 @@ class CareerGraphRAG:
             """)
             return [dict(r) for r in result]
 
+    # ─── Portfolio Page Queries ──────────────────────────────────
+    def get_portfolio_pages_for_projects(self, project_ids: list[str]) -> list[dict]:
+        """Find portfolio pages linked to the given projects."""
+        with self.driver.session() as session:
+            result = session.run("""
+            MATCH (pp:PortfolioPage)-[r:DEPICTS_PROJECT]->(p:Project)
+            WHERE p.id IN $project_ids
+            RETURN pp.page AS page, pp.url AS url, pp.caption AS caption,
+                   pp.page_type AS page_type, r.relevance AS relevance,
+                   p.id AS project_id
+            ORDER BY r.relevance, pp.page
+            """, parameters={"project_ids": project_ids})
+            return [dict(r) for r in result]
+
+    def get_portfolio_pages_for_skills(self, skill_ids: list[str]) -> list[dict]:
+        """Find portfolio pages that demonstrate specific skills."""
+        with self.driver.session() as session:
+            result = session.run("""
+            MATCH (pp:PortfolioPage)-[:SHOWS_SKILL]->(s:Skill)
+            WHERE s.id IN $skill_ids
+            RETURN DISTINCT pp.page AS page, pp.url AS url, pp.caption AS caption,
+                   pp.page_type AS page_type
+            ORDER BY pp.page
+            """, parameters={"skill_ids": skill_ids})
+            return [dict(r) for r in result]
+
+    def get_portfolio_pages_for_achievements(self, achievement_ids: list[str]) -> list[dict]:
+        """Find portfolio pages showing specific achievements."""
+        with self.driver.session() as session:
+            result = session.run("""
+            MATCH (pp:PortfolioPage)-[:SHOWS_ACHIEVEMENT]->(a:Achievement)
+            WHERE a.id IN $achievement_ids
+            RETURN DISTINCT pp.page AS page, pp.url AS url, pp.caption AS caption
+            ORDER BY pp.page
+            """, parameters={"achievement_ids": achievement_ids})
+            return [dict(r) for r in result]
+
+    def get_portfolio_fallback(self, page_type: str = "profile") -> list[dict]:
+        """Fallback: return pages of a given type (e.g., profile page)."""
+        with self.driver.session() as session:
+            result = session.run("""
+            MATCH (pp:PortfolioPage)
+            WHERE pp.page_type = $page_type
+            RETURN pp.page AS page, pp.url AS url, pp.caption AS caption
+            ORDER BY pp.page
+            """, parameters={"page_type": page_type})
+            return [dict(r) for r in result]
+
     # ─── Graph stats ───────────────────────────────────────────
     def get_stats(self) -> dict:
         """Return node/relationship counts."""

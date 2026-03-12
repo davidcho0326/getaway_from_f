@@ -17,6 +17,7 @@ load_dotenv(Path(__file__).resolve().parent.parent.parent / ".env")
 URI = os.getenv("NEO4J_URI")
 AUTH = (os.getenv("NEO4J_USERNAME", "neo4j"), os.getenv("NEO4J_PASSWORD"))
 DATA_FILE = Path(__file__).resolve().parent / "data" / "career_data.json"
+PORTFOLIO_ANNOTATIONS_FILE = Path(__file__).resolve().parent / "data" / "portfolio_page_annotations.json"
 
 
 class CareerKGMigrator:
@@ -81,6 +82,15 @@ class CareerKGMigrator:
             self._ingest_achievements(session, data)
             self._ingest_candidate_gaps(session, data.get("candidate_gaps", []))
             self._ingest_project_evolution(session, data.get("project_evolution", []))
+
+            # Portfolio pages (optional — only if annotations exist)
+            if PORTFOLIO_ANNOTATIONS_FILE.exists():
+                with open(PORTFOLIO_ANNOTATIONS_FILE, "r", encoding="utf-8") as f:
+                    portfolio_pages = json.load(f)
+                self._ingest_portfolio_pages(session, portfolio_pages)
+            else:
+                print("  ℹ️ Portfolio annotations not found, skipping.")
+
         print("✅ Ingestion complete")
 
     def _ingest_person(self, session, person: dict):
@@ -353,6 +363,71 @@ class CareerKGMigrator:
                 """, parameters={"gap_id": gap["id"], "req_id": req_id})
 
         print(f"  ⚠️ Candidate Gaps: {len(gaps)}")
+
+    def _ingest_portfolio_pages(self, session, pages: list):
+        """Create PortfolioPage nodes and link to existing KG entities."""
+        for page in pages:
+            page_id = f"portfolio-page-{page['page']:02d}"
+            embed_text = f"{page.get('title', '')}. {page.get('caption', '')} {page.get('content_summary', '')}"
+            embedding = self.llm.get_embedding(embed_text)
+
+            session.run("""
+            MERGE (pp:PortfolioPage {id: $id})
+            SET pp.page = $page,
+                pp.url = $url,
+                pp.title = $title,
+                pp.caption = $caption,
+                pp.page_type = $page_type,
+                pp.content_summary = $content_summary,
+                pp.visual_keywords = $visual_keywords,
+                pp.embedding = $embedding
+            """, parameters={
+                "id": page_id,
+                "page": page["page"],
+                "url": page.get("url", ""),
+                "title": page.get("title", ""),
+                "caption": page.get("caption", ""),
+                "page_type": page.get("page_type", "unknown"),
+                "content_summary": page.get("content_summary", ""),
+                "visual_keywords": page.get("visual_keywords", []),
+                "embedding": embedding,
+            })
+
+            # DEPICTS_PROJECT relationships
+            for i, proj_id in enumerate(page.get("mentioned_projects", [])):
+                relevance = "primary" if i == 0 else "secondary"
+                session.run("""
+                MATCH (pp:PortfolioPage {id: $pp_id})
+                MATCH (p:Project {id: $proj_id})
+                MERGE (pp)-[r:DEPICTS_PROJECT]->(p)
+                SET r.relevance = $relevance
+                """, parameters={"pp_id": page_id, "proj_id": proj_id, "relevance": relevance})
+
+            # SHOWS_SKILL relationships
+            for skill_id in page.get("mentioned_skills", []):
+                session.run("""
+                MATCH (pp:PortfolioPage {id: $pp_id})
+                MATCH (s:Skill {id: $skill_id})
+                MERGE (pp)-[:SHOWS_SKILL]->(s)
+                """, parameters={"pp_id": page_id, "skill_id": skill_id})
+
+            # SHOWS_ACHIEVEMENT relationships
+            for ach_id in page.get("mentioned_achievements", []):
+                session.run("""
+                MATCH (pp:PortfolioPage {id: $pp_id})
+                MATCH (a:Achievement {id: $ach_id})
+                MERGE (pp)-[:SHOWS_ACHIEVEMENT]->(a)
+                """, parameters={"pp_id": page_id, "ach_id": ach_id})
+
+            # MENTIONS_COMPANY relationships
+            for comp_id in page.get("mentioned_companies", []):
+                session.run("""
+                MATCH (pp:PortfolioPage {id: $pp_id})
+                MATCH (c:Company {id: $comp_id})
+                MERGE (pp)-[:MENTIONS_COMPANY]->(c)
+                """, parameters={"pp_id": page_id, "comp_id": comp_id})
+
+        print(f"  📄 Portfolio Pages: {len(pages)}")
 
     def _ingest_project_evolution(self, session, evolutions: list):
         for evo in evolutions:

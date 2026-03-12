@@ -7,3 +7,4 @@ streamlit>=1.40.0
 streamlit-agraph>=0.0.45
 plotly>=5.18.0
 cloudinary>=1.36.0
+google-genai>=1.51.0
