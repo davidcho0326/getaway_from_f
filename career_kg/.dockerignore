@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.env
+data/
+portfolio_pages.json
+parse_portfolio_pages.py
+upload_portfolio.py
+.DS_Store
