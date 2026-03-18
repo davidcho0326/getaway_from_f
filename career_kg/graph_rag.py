@@ -320,6 +320,19 @@ class CareerGraphRAG:
             return [dict(r) for r in result]
 
     # ─── Portfolio Page Queries ──────────────────────────────────
+    def get_portfolio_pages_for_project_titles(self, titles: list[str]) -> list[dict]:
+        """Find portfolio pages by matching project titles (fuzzy via CONTAINS)."""
+        with self.driver.session() as session:
+            result = session.run("""
+            MATCH (pp:PortfolioPage)-[r:DEPICTS_PROJECT]->(p:Project)
+            WHERE ANY(t IN $titles WHERE toLower(p.title) CONTAINS toLower(t)
+                  OR toLower(t) CONTAINS toLower(p.title))
+            RETURN pp.page AS page, pp.url AS url, pp.caption AS caption,
+                   pp.page_type AS page_type, p.id AS project_id
+            ORDER BY pp.page
+            """, parameters={"titles": titles})
+            return [dict(r) for r in result]
+
     def get_portfolio_pages_for_projects(self, project_ids: list[str]) -> list[dict]:
         """Find portfolio pages linked to the given projects."""
         with self.driver.session() as session:
@@ -335,14 +348,15 @@ class CareerGraphRAG:
 
     def get_portfolio_pages_for_skills(self, skill_ids: list[str]) -> list[dict]:
         """Find portfolio pages that demonstrate specific skills."""
+        lower_ids = [s.lower().replace(" ", "-") for s in skill_ids]
         with self.driver.session() as session:
             result = session.run("""
             MATCH (pp:PortfolioPage)-[:SHOWS_SKILL]->(s:Skill)
-            WHERE s.id IN $skill_ids
+            WHERE toLower(s.id) IN $skill_ids
             RETURN DISTINCT pp.page AS page, pp.url AS url, pp.caption AS caption,
                    pp.page_type AS page_type
             ORDER BY pp.page
-            """, parameters={"skill_ids": skill_ids})
+            """, parameters={"skill_ids": lower_ids})
             return [dict(r) for r in result]
 
     def get_portfolio_pages_for_achievements(self, achievement_ids: list[str]) -> list[dict]:
